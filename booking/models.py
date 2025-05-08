@@ -4,8 +4,8 @@ from django.contrib.auth.models import User
 
 
 # Choice fields for table capacity and booking time
-CAPACITY = ((6, "6"))
-BOOKING_TIME = ((1, "12:00pm - 1:15pm"), (2, "1:30pm - 2:45pm"), (3, "3:00pm - 4:15pm"), (4, "4:30pm - 5:45pm"), (5, "6:00pm - 7:15pm"))
+CAPACITY = [(6, "6")]
+BOOKING_TIME = ((1, "12:00pm - 1:15pm"), (2, "1:30pm - 2:45pm"), (3, "3:00pm - 4:15pm"), (4, "4:30pm - 5:45pm"), (5, "6:00pm - 7:15pm"), (6, "7:30pm - 8:45pm"))
 
 
 class Table(models.Model):
