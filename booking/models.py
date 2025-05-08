@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 
 
 
-# Capacity and booking time
+# Choice fields for table capacity and booking time
 CAPACITY = ((6, "6"))
 BOOKING_TIME = ((1, "12:00pm - 1:15pm"), (2, "1:30pm - 2:45pm"), (3, "3:00pm - 4:15pm"), (4, "4:30pm - 5:45pm"), (5, "6:00pm - 7:15pm"))
 
@@ -32,6 +32,7 @@ class Booking(models.Model):
         Table, on_delete=models.CASCADE, related_name='booking_table')
     booking_time = models.IntegerField(choices=BOOKING_TIME, default=1)
     date = models.DateField()
+    guests = models.IntegerField(default=1)
 
     def __str__(self):
         return f"Booking for {self.name} on {self.date} at {self.booking_time}"

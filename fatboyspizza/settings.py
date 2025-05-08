@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     
     # Apps
     'home',
+    'booking',
 
     # Other
     'crispy_forms',
@@ -69,7 +70,7 @@ MIDDLEWARE = [
 CRISPY_ALLOWED_TEMPLATE_PACKS = 'bootstrap5'
 CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
-ROOT_URLCONF = 'main.urls'
+ROOT_URLCONF = 'fatboyspizza.urls'
 
 TEMPLATES = [
     {
@@ -102,7 +103,7 @@ AUTHENTICATION_BACKENDS = [
     'allauth.account.auth_backends.AuthenticationBackend',
 ]
 
-WSGI_APPLICATION = 'main.wsgi.application'
+WSGI_APPLICATION = 'fatboyspizza.wsgi.application'
 
 
 # Database
@@ -149,9 +150,8 @@ USE_TZ = True
 
 # Account Setup
 
-ACCOUNT_AUTHENTICATION_METHOD = 'username_email'
-ACCOUNT_EMAIL_REQUIRED = True
-ACCOUNT_USERNAME_REQUIRED = True
+ACCOUNT_LOGIN_METHOD = {'email', 'username'}
+ACCOUNT_SIGNUP_FIELDS = ['email*', 'username*', 'password1*', 'password2*']
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
