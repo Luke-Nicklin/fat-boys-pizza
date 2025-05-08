@@ -1,17 +1,18 @@
 from django.views.generic import CreateView
 
+from django.contrib.auth.mixins import LoginRequiredMixin
+
 from .models import Booking
 from .forms import BookingForm
 
 
-class AddBooking(CreateView):
+class AddBooking(LoginRequiredMixin, CreateView):
     """
     View to handle the creation of a new booking.
     """
-    template_name = 'booking/add_booking.html'
+    template_name = 'booking/add-booking.html'
     model = Booking
     form_class = BookingForm
-    fields = ['name', 'phone_number', 'table', 'booking_time', 'date', 'guests']
     success_url = '/booking/success/'  # Redirect to a success page after booking
 
     def form_valid(self, form):
