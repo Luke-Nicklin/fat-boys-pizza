@@ -48,6 +48,7 @@ INSTALLED_APPS = [
     # Apps
     'home',
     'booking',
+    'menu',
 
     # Other
     'crispy_forms',
@@ -164,6 +165,7 @@ LOGIN_REDIRECT_URL = '/'
 
 STATIC_URL = 'static/'
 
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'menu', 'static'),)
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 # Cloudinary settings

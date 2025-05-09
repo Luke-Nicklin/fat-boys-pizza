@@ -1,0 +1,158 @@
+{% extends "base.html" %}
+{% load static %}
+
+{%block css %}
+<link rel="stylesheet" href="{% static 'menu/css/menu.css' %}">
+{% endblock %}
+
+{% block content %}
+    <header class="menu-header">
+    <div class="heading-container">
+        <img src="{% static 'menu/images/pizza-header.webp' %}" alt="Small Pizza Icon" class="heading-icon">
+        <h1>Pizzas</h1>
+    </div>
+    </header>
+    <main>
+        <ul id="pizza-list">
+            <li class="pizza-item">
+                <h3>Margherita Classica</h3>
+                <p>A simple yet satisfying pizza with fresh mozzarella, ripe tomatoes, and fragrant basil on a thin crust.</p>
+                <span>£12.00 (Approx. 800 calories)</span>
+            </li>
+            <li class="pizza-item">
+                <h3>Pepperoni Passion</h3>
+                <p>A classic favorite with generous slices of spicy pepperoni and melted mozzarella cheese.</p>
+                <span>£14.00 (Approx. 950 calories)</span>
+            </li>
+            <li class="pizza-item">
+                <h3>Vegetarian Delight</h3>
+                <p>A medley of fresh vegetables, including bell peppers, mushrooms, onions, and olives, with a rich tomato sauce and mozzarella.</p>
+                <span>£13.50 (Approx. 750 calories)</span>
+            </li>
+            <li class="pizza-item">
+                <h3>Meat Lover's Special</h3>
+                <p>A hearty pizza loaded with a variety of meats, including sausage, bacon, and ham, topped with melted cheese.</p>
+                <span>£16.00 (Approx. 1100 calories)</span>
+            </li>
+            <li class="pizza-item">
+                <h3>Hawaiian Paradise</h3>
+                <p>A controversial but delicious pizza with ham, pineapple, mozzarella cheese, and tomato sauce.</p>
+                <span>£14.50 (Approx 850 calories)</span>
+            </li>
+            <li class="pizza-item">
+                <h3>BBQ Chicken Ranch</h3>
+                <p>A flavorful pizza with grilled chicken, tangy BBQ sauce, red onions, and a creamy ranch drizzle.</p>
+                <span>£15.50 (Approx 1000 calories)</span>
+            </li>
+            <li class="pizza-item">
+                <h3>Spicy Italian Sausage</h3>
+                <p>A robust pizza with spicy Italian sausage, roasted red peppers, caramelized onions, and mozzarella cheese.</p>
+                <span>£15.00 (Approx 975 calories)</span>
+            </li>
+            <li class="pizza-item">
+                <h3>Four Cheese Fantasy</h3>
+                <p>A cheese lover's dream, featuring a blend of mozzarella, cheddar, provolone, and parmesan cheeses.</p>
+                <span>£14.50 (Approx 900 calories)</span>
+            </li>
+        </ul>
+
+    <div class="heading-container">
+        <img src="{% static 'menu/images/pizza-header.webp' %}" alt="Small Pizza Icon" class="heading-icon">
+        <h2>Create your own</h2>
+    </div>
+        <ul>
+        <li class="pizza-item-create">
+            <p>Choose your crust, sauce, cheese, and toppings to create your perfect pizza.</p>
+            <span>Starting at £10.00 (Calorie count varies)</span>
+
+            <div class="options-container">
+            <div class="options-box">
+                <h4>Crust Options:</h4>
+                <ul>
+                    <li>Thin</li>
+                    <li>Thick</li>
+                    <li>Stuffed Crust (+ £2)</li>
+                    <li>Gluten-Free (+ £2)</li>
+                </ul>
+            </div>
+
+            <div class="options-box">
+                <h4>Sauce Options:</h4>
+                <ul>
+                    <li>Tomato</li>
+                    <li>Pesto</li>
+                    <li>BBQ</li>
+                    <li>Alfredo</li>
+                </ul>
+            </div>
+
+            <div class="options-box">
+                <h4>Vegetable Options:</h4>
+                <ul>
+                    <li>Onions</li>
+                    <li>Bell Peppers</li>
+                    <li>Tomatoes</li>
+                    <li>Spinach</li>
+                </ul>
+            </div>
+
+            <div class="options-box">
+                <h4>Meat Options:</h4>
+                <ul>
+                    <li>Pepperoni</li>
+                    <li>Sausage</li>
+                    <li>Bacon</li>
+                    <li>Ham</li>
+                </ul>
+            </div>
+            </div>
+        </li>
+           
+        <div class="heading-container">
+            <img src="{% static 'menu/images/salad-graphic.webp' %}" alt="Small Salad Icon" class="heading-icon">
+            <h2>Sides</h2>
+        </div>
+<ul id="sides-list">
+    <li class="side-item">
+        <h3>Garlic Knots</h3>
+        <span>£5.00 (Approx. 400 calories)</span>
+        <p>Soft, buttery knots of dough, baked with garlic and herbs.</p>
+    </li>
+    <li class="side-item">
+        <h3>Caesar Salad</h3>
+        <span>£7.00 (Approx. 300 calories)</span>
+        <p>Crisp romaine lettuce, parmesan cheese, croutons, and Caesar dressing.</p>
+    </li>
+    <li class="side-item">
+        <h3>Breadsticks with Marinara Sauce</h3>
+        <span>£6.00 (Approx. 450 calories)</span>
+        <p>Warm, buttery breadsticks served with a side of marinara sauce for dipping.</p>
+    </li>
+    <li class="side-item">
+        <h3>Cheesy Garlic Bread</h3>
+        <span>£6.50 (Approx. 500 calories)</span>
+        <p>Warm and crusty garlic bread topped with melted mozzarella cheese.</p>
+    </li>
+</ul>
+
+    <div class="heading-container">
+        <img src="{% static 'menu/images/beer-bottle.webp' %}" alt="Beer Bottle Icon" class="heading-icon">
+        <h2>Drinks</h2>
+    </div>
+        <ul>
+            <li>Soft Drinks - £3.00</li>
+            <li>Juices - 34.00</li>
+            <li>Beer - £6.50</li>
+            <li>Wine - £7</li>
+        </ul>
+    
+        <div class="heading-container">
+            <img src="{% static 'menu/images/desert-image.webp' %}" alt="Desert Icon" class="heading-icon">
+        <h2>Desserts</h2>
+        <ul>
+            <li><b>Cannoli</b> - £6.00 (Approx. 300 calories)</li>
+            <li><b>Tiramisu</b> - £7.00 (Approx. 350 calories)</li>
+        </ul>
+        <p style="font-size: 0.9em; color: #555;">*Note: Calorie information is approximate and may vary. Please ask your server for more detailed nutritional information.*</p>
+    </main>
+{% endblock %}

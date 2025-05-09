@@ -13,7 +13,7 @@ class AddBooking(LoginRequiredMixin, CreateView):
     template_name = 'booking/add-booking.html'
     model = Booking
     form_class = BookingForm
-    success_url = '/booking/success/'  # Redirect to a success page after booking
+    success_url = '/booking/success/'
 
     def form_valid(self, form):
         """
