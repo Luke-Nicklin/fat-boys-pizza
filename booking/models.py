@@ -24,12 +24,10 @@ class Booking(models.Model):
     """
     Booking model to represent a booking made by a customer.
     """
-    customer = models.ForeignKey(
-        User, on_delete=models.CASCADE, related_name='booking_customer')
+    customer = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=100)
     phone_number = models.CharField(max_length=15)
-    table = models.ForeignKey(
-        Table, on_delete=models.CASCADE, related_name='booking_table')
+    table = models.ForeignKey(Table, on_delete=models.CASCADE)
     booking_time = models.IntegerField(choices=BOOKING_TIME, default=1)
     date = models.DateField()
     guests = models.IntegerField(default=1)

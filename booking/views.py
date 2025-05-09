@@ -2,6 +2,7 @@ from django.views.generic import CreateView
 
 from django.contrib.auth.mixins import LoginRequiredMixin
 
+from django.contrib.auth.models import User
 from .models import Booking
 from .forms import BookingForm
 
@@ -19,5 +20,7 @@ class AddBooking(LoginRequiredMixin, CreateView):
         """
         If the form is valid, save the booking and redirect to the success page.
         """
-        form.instance.customer = self.request.customer
-        return super(AddBooking, self).form_valid(form)
+        form.instance.Customer = self.request.user
+        return super().form_valid(form)
+        
+    

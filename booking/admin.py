@@ -12,7 +12,7 @@ class TableAdmin(admin.ModelAdmin):
 
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
-    list_display = ('customer', 'name', 'phone_number', 'table', 
+    list_display = ('customer', 'name', 'phone_number', 'table',
                     'booking_time', 'date', 'guests')
     search_fields = ('name', 'phone_number')
     list_filter = ('date', 'booking_time')
