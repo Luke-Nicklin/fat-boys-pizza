@@ -8,7 +8,8 @@ class BookingForm(forms.ModelForm):
     """
     class Meta:
         model = Booking
-        fields = ['name', 'phone_number', 'table', 'booking_time', 'date', 'guests']
+        fields = ['customer', 'name', 'phone_number', 
+                  'table', 'booking_time', 'date', 'guests']
         widgets = {
             'date': forms.DateInput(attrs={'type': 'date'}),
             'booking_time': forms.Select(),
