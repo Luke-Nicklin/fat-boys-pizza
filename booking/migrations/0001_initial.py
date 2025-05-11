@@ -15,25 +15,68 @@ class Migration(migrations.Migration):
 
     operations = [
         migrations.CreateModel(
-            name='Table',
+            name="Table",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('table_number', models.IntegerField(unique=True)),
-                ('capacity', models.IntegerField(choices=[(6, '6')], default=6)),
-                ('is_booked', models.BooleanField(default=False)),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("table_number", models.IntegerField(unique=True)),
+                ("capacity", models.IntegerField(choices=[(6, "6")], default=6)),
+                ("is_booked", models.BooleanField(default=False)),
             ],
         ),
         migrations.CreateModel(
-            name='Booking',
+            name="Booking",
             fields=[
-                ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('name', models.CharField(max_length=100)),
-                ('phone_number', models.CharField(max_length=15)),
-                ('booking_time', models.IntegerField(choices=[(1, '12:00pm - 1:15pm'), (2, '1:30pm - 2:45pm'), (3, '3:00pm - 4:15pm'), (4, '4:30pm - 5:45pm'), (5, '6:00pm - 7:15pm'), (6, '7:30pm - 8:45pm')], default=1)),
-                ('date', models.DateField()),
-                ('guests', models.IntegerField(default=1)),
-                ('customer', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='booking_customer', to=settings.AUTH_USER_MODEL)),
-                ('table', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='booking_table', to='booking.table')),
+                (
+                    "id",
+                    models.BigAutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("name", models.CharField(max_length=100)),
+                ("phone_number", models.CharField(max_length=15)),
+                (
+                    "booking_time",
+                    models.IntegerField(
+                        choices=[
+                            (1, "12:00pm - 1:15pm"),
+                            (2, "1:30pm - 2:45pm"),
+                            (3, "3:00pm - 4:15pm"),
+                            (4, "4:30pm - 5:45pm"),
+                            (5, "6:00pm - 7:15pm"),
+                            (6, "7:30pm - 8:45pm"),
+                        ],
+                        default=1,
+                    ),
+                ),
+                ("date", models.DateField()),
+                ("guests", models.IntegerField(default=1)),
+                (
+                    "customer",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="booking_customer",
+                        to=settings.AUTH_USER_MODEL,
+                    ),
+                ),
+                (
+                    "table",
+                    models.ForeignKey(
+                        on_delete=django.db.models.deletion.CASCADE,
+                        related_name="booking_table",
+                        to="booking.table",
+                    ),
+                ),
             ],
         ),
     ]

@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <h1 class="text-center mt-4">Your bookings</h1>
+
+        {% if bookings %}
+            <table class="table mt-4">
+                <thead>
+                    <tr>
+                        <th>Customer</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Table</th>
+                        <th>Guests</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for booking in bookings %}
+                        <tr>
+                            <td>{{ booking.pk }}</td>
+                            <td>{{ booking.name }}</td>
+                            <td>{{ booking.date }}</td>
+                            <td>{{ booking.booking_time }}</td>
+                            <td>{{ booking.table }}</td>
+                            <td>{{ booking.guests }}</td>
+                            <td>
+                                <a href="{% url 'booking:edit-booking' booking.id %}" class="btn btn-sm btn-primary">Edit</a>
+                                <a href="{% url 'booking:booking-confirm-delete' booking.id %}" class="btn btn-sm btn-info">Delete</a>
+                            </td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <div class="alert alert-info mt-4">
+                You have no current bookings. <a href="{% url 'booking:add-booking' %}">Book now</a>.
+            </div>
+        {% endif %}
+        </div>
+    </div>
+{% endblock %}

@@ -79,3 +79,8 @@ a.nav-link {
     color: var(--color-background);
     border: var(--color-primary);
 }
+
+h1.text-center {
+    margin-top: 20px;
+    color: var(--color-primary);
+}

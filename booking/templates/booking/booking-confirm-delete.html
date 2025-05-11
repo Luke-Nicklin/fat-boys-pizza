@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{{ form.media }}
+
+{% block content %}
+
+<!-- Confirm booking deletion -->
+<div class="container">
+    <h1 class="text-center mt-2">Confirm booking deletion</h1>
+    <div class="d-flex justify-content-center pt-3">
+        <form method="post" class="text-center">
+            {% csrf_token %}
+            <p>Are you sure you want to delete the booking for {{ object.pk }}?</p>
+            <p>This action cannot be undone.</p>
+            <p>Name: {{ object.name }}</p>
+            <p>Name: {{ object.table }}</p>
+            <p>Name: {{ object.date }}</p>
+            <p>Name: {{ object.booking_time }}</p>
+            <button type="submit" class="btn btn-danger">Delete</button>
+            <a href="{% url 'booking:booking-detail' object.id %}" class="btn btn-secondary">Cancel</a>
+        </form>
+    </div>
+</div>
+
+{% endblock}
