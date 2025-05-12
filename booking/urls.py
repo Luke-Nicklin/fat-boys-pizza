@@ -5,12 +5,18 @@ from .views import (
     DeleteBooking,
     BookingList,
     EditBooking,
+    BookingConfirmed,
 )
 
 app_name = 'booking'
 
 urlpatterns = [
     path("add-booking/", AddBooking.as_view(), name="add-booking"),
+    path(
+        "booking-confirmed/<int:pk>/",
+        BookingConfirmed.as_view(),
+        name="booking-confirmed",
+    ),
     path(
         "manage-bookings/",
         BookingList.as_view(),

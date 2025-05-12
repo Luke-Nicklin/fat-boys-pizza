@@ -8,21 +8,19 @@
 
 {% block content %}
 
-<!-- Confirm booking deletion -->
+<!-- Confirm booking -->
 <div class="container">
-    <h1 class="text-center mt-2">Confirm booking deletion</h1>
+    <h1 class="text-center mt-2">Booking confirmed</h1>
     <div class="d-flex justify-content-center pt-3">
         <form method="post" class="text-center">
             {% csrf_token %}
-            <p>Are you sure you want to delete the booking for {{ object.guests }}?</p>
-            <p>This action cannot be undone.</p>
+            <p>We look forward to seeing you.</p>
             <p>Name: {{ object.name }}</p>
             <p>Table: {{ object.table }}</p>
             <p>Guests: {{ object.guests }}</p>
             <p>Date: {{ object.date }}</p>
             <p>Time: {{ object.booking_time }}</p>
-            <button type="submit" class="btn btn-danger">Delete</button>
-            <a href="{% url 'booking:booking-detail' object.id %}" class="btn btn-secondary">Cancel</a>
+            <a href="{% url 'booking:manage-bookings' %}" class="btn btn-primary mt-3">Manage Bookings</a>
         </form>
     </div>
 </div>

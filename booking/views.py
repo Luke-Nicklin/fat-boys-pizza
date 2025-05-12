@@ -2,9 +2,10 @@ from django.views.generic import CreateView, DetailView, DeleteView, ListView, U
 
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
-from django.contrib.auth.models import User
+from django.urls import reverse
 from .models import Booking
 from .forms import BookingForm
+from django.shortcuts import render
 
 
 class AddBooking(LoginRequiredMixin, CreateView):
@@ -15,14 +16,30 @@ class AddBooking(LoginRequiredMixin, CreateView):
     template_name = "booking/add-booking.html"
     model = Booking
     form_class = BookingForm
-    success_url = "/booking/success/"
 
     def form_valid(self, form):
-        """
-        If the form is valid, save the booking and redirect to the success page.
-        """
         form.instance.customer = self.request.user
+        self.object = form.save()
         return super().form_valid(form)
+
+    def get_success_url(self):
+        return reverse('booking:booking-confirmed', kwargs={'pk': self.object.pk})
+    
+
+class BookingConfirmed(LoginRequiredMixin, DetailView):
+    """
+    Confirm the booking.
+    """
+
+    model = Booking
+    template_name = "booking/booking-confirmed.html"
+    context_object_name = "booking"
+
+    def get_queryset(self):
+        """
+        Ensure that only the bookings of the logged-in user can be viewed.
+        """
+        return Booking.objects.filter(customer=self.request.user)
 
 
 class BookingList(LoginRequiredMixin, ListView):
@@ -105,3 +122,5 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         Ensure that only the bookings of the logged-in user can be deleted.
         """
         return Booking.objects.filter(customer=self.request.user)
+    
+
