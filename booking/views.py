@@ -55,7 +55,7 @@ class BookingList(LoginRequiredMixin, ListView):
         """
         Ensure that only the bookings of the logged-in user can be viewed.
         """
-        return Booking.objects.filter(customer=self.request.user)
+        return Booking.objects.filter(customer=self.request.user).order_by("date", "booking_time")
 
 
 class BookingDetail(LoginRequiredMixin, DetailView):

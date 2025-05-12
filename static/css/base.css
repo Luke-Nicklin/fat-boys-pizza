@@ -24,6 +24,18 @@ body {
     font-family: var(--font-family);
 }
 
+header {
+    margin-top: 60px;
+}
+
+.header-image img{
+    border-radius: 15px;
+}
+
+header h1 {
+    color: var(--color-primary);
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--color-text);
 }

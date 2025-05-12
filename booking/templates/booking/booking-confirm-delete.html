@@ -20,9 +20,9 @@
             <p>Table: {{ object.table }}</p>
             <p>Guests: {{ object.guests }}</p>
             <p>Date: {{ object.date }}</p>
-            <p>Time: {{ object.booking_time }}</p>
+            <p>Time: {{ object.get_booking_time_display }}</p>
             <button type="submit" class="btn btn-danger">Delete</button>
-            <a href="{% url 'booking:booking-detail' object.id %}" class="btn btn-secondary">Cancel</a>
+            <a href="{% url 'booking:manage-bookings' %}" class="btn btn-secondary">Cancel</a>
         </form>
     </div>
 </div>
