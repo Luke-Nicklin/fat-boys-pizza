@@ -1,4 +1,4 @@
-from django.views.generic import CreateView, DetailView, DeleteView, ListView
+from django.views.generic import CreateView, DetailView, DeleteView, ListView, UpdateView
 
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
@@ -56,7 +56,7 @@ class BookingDetail(LoginRequiredMixin, DetailView):
         """
         return Booking.objects.filter(customer=self.request.user)
 
-class EditBooking(LoginRequiredMixin, UserPassesTestMixin, CreateView):
+class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     Edit a booking.
     """
@@ -64,17 +64,24 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, CreateView):
     model = Booking
     form_class = BookingForm
     template_name = "booking/edit-booking.html"
-    success_url = "/booking/success/"
+    success_url = "/booking/manage-bookings/"
+    pk_url_kwarg = "booking_id"
+
+    def get_queryset(self):
+        """
+        Ensure that only the bookings of the logged-in user can be edited.
+        """
+        return Booking.objects.filter(customer=self.request.user)
+
+    def test_func(self):
+        booking = self.get_object()
+        return self.request.user == booking.customer
 
     def form_valid(self, form):
         """
         If the form is valid, save the booking and redirect to the success page.
         """
-        form.instance.customer = self.request.user
         return super().form_valid(form)
-
-    def test_func(self):
-        return self.request.user == self.get_object().user
 
 
 class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
@@ -84,7 +91,7 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     model = Booking
     template_name = "booking/booking-confirm-delete.html"
-    success_url = "/booking/success/"
+    success_url = "/booking/booking-confirm-delete.html/"
 
     def test_func(self):
         return self.request.user == self.get_object().user
