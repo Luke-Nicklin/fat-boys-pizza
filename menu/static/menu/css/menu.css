@@ -11,7 +11,6 @@ body {
 main {
     padding: 20px;
     text-align: center;
-    margin-top: 20px;
 }
 
 .heading-container {
@@ -20,6 +19,7 @@ main {
     align-items: center;
     gap: 5px;
     margin-bottom: 15px;
+    margin-top: -60px;
 }
 
 .heading-container h1,
