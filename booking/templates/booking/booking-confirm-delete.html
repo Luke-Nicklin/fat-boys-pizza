@@ -9,7 +9,7 @@
     <div class="d-flex justify-content-center pt-3">
         <form method="post" class="text-center">
             {% csrf_token %}
-            <p>Are you sure you want to delete the booking for {{ object.pk }}?</p>
+            <p>Are you sure you want to delete the booking for {{ object.guests }}?</p>
             <p>This action cannot be undone.</p>
             <p>Name: {{ object.name }}</p>
             <p>Name: {{ object.table }}</p>
@@ -21,4 +21,4 @@
     </div>
 </div>
 
-{% endblock}
+{% endblock %}

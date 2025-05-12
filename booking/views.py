@@ -91,10 +91,14 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     model = Booking
     template_name = "booking/booking-confirm-delete.html"
-    success_url = "/booking/booking-confirm-delete.html/"
+    success_url = "/booking/manage-bookings/"
+    pk_url_kwarg = "booking_id"
 
     def test_func(self):
-        return self.request.user == self.get_object().user
+        """
+        Ensure that only the user who made the booking can delete it.
+        """
+        return self.request.user == self.get_object().customer
 
     def get_queryset(self):
         """
