@@ -26,3 +26,14 @@ Insert mockup when complete
     - [Run locally](#run-locally)
     - [Fork project](#fork-project)
 - [Credits](#credits)
+
+# Site goals
+
+The website aims to help the restaurant to take bookings online. The staff can easily keep track of upcoming bookings and make changes to bookings when neccessary.
+
+The website also aims to help customers to easily view the restaurant's menu and book a table online. They will also be able to edit the booking and cancel the booking via the website.
+
+ # Planning
+ ## Agile
+
+ 
