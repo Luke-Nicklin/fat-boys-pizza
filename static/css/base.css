@@ -164,12 +164,12 @@ small {
 
 @media (max-width: 767.98px) {
     #location-map {
-        width: 90% !important; /* Try a percentage width */
+        width: 90% !important;
         margin-left: auto !important;
-        margin-right: auto !important; /* Force horizontal centering using auto margins */
+        margin-right: auto !important;
         margin-bottom: 20px !important;
-        text-align: center !important; /* Center the heading */
-        display: block !important; /* Ensure it's a block-level element */
+        text-align: center !important;
+        display: block !important;
     }
 
     .map-responsive {
@@ -187,18 +187,18 @@ small {
     }
 
     .location-container {
-        display: block !important; /* Override flexbox for now */
+        display: block !important;
     }
 }
 
 @media (max-width: 1400px) {
     #location-map {
-        width: 90% !important; /* Try a percentage width */
+        width: 90% !important;
         margin-left: auto !important;
-        margin-right: auto !important; /* Force horizontal centering using auto margins */
+        margin-right: auto !important;
         margin-bottom: 20px !important;
-        text-align: center !important; /* Center the heading */
-        display: block !important; /* Ensure it's a block-level element */
+        text-align: center !important;
+        display: block !important;
     }
 
     .map-responsive {

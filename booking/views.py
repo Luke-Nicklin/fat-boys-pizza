@@ -5,6 +5,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.urls import reverse
 from .models import Booking
 from .forms import BookingForm
+from django.contrib import messages
 from django.shortcuts import render
 
 
@@ -56,7 +57,7 @@ class BookingList(LoginRequiredMixin, ListView):
         Ensure that only the bookings of the logged-in user can be viewed.
         """
         return Booking.objects.filter(customer=self.request.user).order_by("date", "booking_time")
-
+    
 
 class BookingDetail(LoginRequiredMixin, DetailView):
     """
@@ -89,7 +90,7 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         Ensure that only the bookings of the logged-in user can be edited.
         """
         return Booking.objects.filter(customer=self.request.user)
-
+    
     def test_func(self):
         booking = self.get_object()
         return self.request.user == booking.customer
@@ -98,6 +99,7 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         """
         If the form is valid, save the booking and redirect to the success page.
         """
+        messages.success(self.request, "Booking updated successfully.")
         return super().form_valid(form)
 
 
@@ -123,4 +125,9 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         """
         return Booking.objects.filter(customer=self.request.user)
     
-
+    def delete(self, request, *args, **kwargs):
+        """
+        If the booking is deleted successfully, redirect to the success page.
+        """
+        messages.success(self.request, "Booking deleted successfully.")
+        return super().delete(request, *args, **kwargs)

@@ -94,6 +94,11 @@ a.nav-link {
     border: var(--color-primary);
 }
 
+.btn-secondary {
+    background-color: gray;
+    color: var(--color-background);
+}
+
 h1.text-center {
     margin-top: 20px;
     font-size: 4em;
