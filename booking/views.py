@@ -74,6 +74,7 @@ class BookingDetail(LoginRequiredMixin, DetailView):
         """
         return Booking.objects.filter(customer=self.request.user)
 
+
 class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     """
     Edit a booking.
@@ -97,9 +98,10 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
 
     def form_valid(self, form):
         """
-        If the form is valid, save the booking and redirect to the success page.
+        If the form is valid, save the booking and redirect to the manage bookings page.
         """
         messages.success(self.request, "Booking updated successfully.")
+        print("Booking updated successfully.")
         return super().form_valid(form)
 
 
@@ -127,7 +129,9 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     
     def delete(self, request, *args, **kwargs):
         """
-        If the booking is deleted successfully, redirect to the success page.
+        If the booking is deleted successfully, redirect to the manage 
+        bookings page.
         """
         messages.success(self.request, "Booking deleted successfully.")
+        print("Booking deleted successfully.")
         return super().delete(request, *args, **kwargs)
