@@ -34,7 +34,7 @@ header {
 
 header h1 {
     color: var(--color-primary);
-    font-size: 5em;
+    font-size: 4em;
 }
 
 #why-us {
@@ -54,7 +54,7 @@ h1, h2, h3, h4, h5, h6 {
 main {
     flex: 1 0 auto;
     background-color: var(--color-background);
-    margin-top: 40px;
+    margin-top: 60px;
 }
 
 
@@ -104,7 +104,118 @@ a.nav-link {
     border: var(--color-primary);
 }
 
+.btn-secondary {
+    background-color: gray;
+    color: var(--color-background);
+}
+
 h1.text-center {
     margin-top: 20px;
     color: var(--color-primary);
+}
+
+.col-12.col-md-6:nth-child(2) { /* Target the second col-md-6 div in the row */
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.card {
+    color: var(--color-text);
+    border: var(--color-primary);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+    text-align: left;
+}
+
+small {
+    text-align: left;
+}
+
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#location-map,
+#opening-times {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+}
+
+#location-map {
+    padding-right: 20px;
+}
+
+#opening-times {
+    padding-left: 20px;
+    text-align: center;
+}
+
+@media (max-width: 767.98px) {
+    #location-map {
+        width: 90% !important; /* Try a percentage width */
+        margin-left: auto !important;
+        margin-right: auto !important; /* Force horizontal centering using auto margins */
+        margin-bottom: 20px !important;
+        text-align: center !important; /* Center the heading */
+        display: block !important; /* Ensure it's a block-level element */
+    }
+
+    .map-responsive {
+        width: 100% !important;
+    }
+
+    .map-responsive iframe {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    #opening-times {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .location-container {
+        display: block !important; /* Override flexbox for now */
+    }
+}
+
+@media (max-width: 1400px) {
+    #location-map {
+        width: 90% !important; /* Try a percentage width */
+        margin-left: auto !important;
+        margin-right: auto !important; /* Force horizontal centering using auto margins */
+        margin-bottom: 20px !important;
+        text-align: center !important; /* Center the heading */
+        display: block !important; /* Ensure it's a block-level element */
+    }
+
+    .map-responsive {
+        width: 100% !important;
+    }
+
+    .map-responsive iframe {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    #opening-times {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .location-container {
+        display: block !important; /* Override flexbox for now */
+    }
 }

@@ -6,8 +6,13 @@
 {% endblock %}
 
 {% block content %}
+<header class="add-booking-header">
+    <div class="heading-container">
+        <img src="{% static 'menu/images/pizza-header.webp' %}" alt="Small Pizza Icon" class="heading-icon">
+        <h1>Add booking</h1>
+    </div>
+</header>
 <div class="container">
-    <h1 class="text-center">Add Booking</h1>
     <form method="POST" enctype="multipart/form-data" class="p-2 form">
         {% csrf_token %}
         {{ form.media }}
