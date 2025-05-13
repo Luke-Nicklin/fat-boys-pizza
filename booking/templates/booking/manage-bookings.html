@@ -6,9 +6,13 @@
 {% endblock %}
 
 {% block content %}
+<header class="add-booking-header">
+    <div class="heading-container">
+        <img src="{% static 'menu/images/pizza-header.webp' %}" alt="Small Pizza Icon" class="heading-icon">
+        <h1>Your bookings</h1>
+    </div>
+</header>
     <div class="container">
-        <h1 class="text-center mt-4">Your bookings</h1>
-
         {% if messages %}
         <div class="notification-container" style="position: fixed; top: 20px; right: 20px; z-index: 1050;">
             {% for message in messages %}
