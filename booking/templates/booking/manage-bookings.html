@@ -12,6 +12,7 @@
         {% if messages %}
         <div class="notification-container" style="position: fixed; top: 20px; right: 20px; z-index: 1050;">
             {% for message in messages %}
+            {% if "updated successfully" in message or "deleted successfully" in message %}
             <div class="toast fade show" role="alert" aria-live="assertive" aria-atomic="true">
                 <div class="toast-header">
                     <strong class="me-auto">Success</strong>
@@ -21,6 +22,7 @@
                     {{ message }}
                 </div>
             </div>
+            {% endif %}
             {% endfor %}
         </div>
         {% endif %}

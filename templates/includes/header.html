@@ -17,9 +17,16 @@
           <li class="nav-item">
             <a class="nav-link {% if url_name == 'home' %}active{% endif %}" aria-current="page" href="{% url 'home' %}">Home</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link {% if url_name == 'add-booking' %}active{% endif %}" href="{% url 'booking:add-booking' %}">Book</a>
-          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Bookings
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" aria-current="page" href="{% url 'booking:manage-bookings' %}">Manage bookings</a></li>
+                <li><a class="dropdown-item" aria-current="page" href="{% url 'booking:add-booking' %}">Add booking</a></li>                       
+            </ul>
+        </li>
           <li class="nav-item">
             <a class="nav-link {% if url_name == 'menu' %}active{% endif %}" href="{% url 'menu' %}">Menu</a>
           </li>
