@@ -5,4 +5,4 @@ FatBoysPizza is a restaurant booking web app for a fictional pizza restaurant ba
 Insert mockup when complete
 
 ## Table of contents
-- [FatBoysPizza] (#FatboysPizza)
+- [FatBoysPizza](#FatboysPizza)
