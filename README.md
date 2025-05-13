@@ -41,7 +41,7 @@ Insert kanban image
 
 ## User Stories
 
-** Base set up **
+**Base set up**
 
 As a developer, I need to create the base.html page and structure so that other pages can reuse the layout
 
@@ -53,17 +53,17 @@ As a developer, I need to include the social links in the footer.html so it appe
 
 As a developer, I need to create the nav bar so users can easily navigate the website
 
-** Authentication app **
+**Authentication app**
 
 As a developer, I need to set up allauth so that users can easily register and login to the website
 
 As a developer, I need to style the allauth pages to have the same styling as the rest of the website
 
-** Menu **
+**Menu**
 
 As a user, I would like to be able to view the menu, so that I can see what types of pizza are available.
 
-** Booking **
+**Booking**
 
 As a user, I wan to be able to select a date, time and number of guests so that I can book a table at the restaurant.
 
@@ -73,7 +73,7 @@ As a user, I want to edit my booking, so that I can change the details if needed
 
 As a user, I want to cancel my booking, so I can let the restaurant know I no longer need the table.
 
-** Documentation **
+**Documentation**
 
 As a developer, I need to create a reade.md file, so that other developers can easily understand my website
 
