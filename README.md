@@ -129,3 +129,5 @@ As a developer, I need to create a testing.md file, so that I can show the tests
 
 ![500 error](docs/wireframes/FatBoysPizza%20-%20500%20Error.png)
 
+# Features
+
