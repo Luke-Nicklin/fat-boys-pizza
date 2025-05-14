@@ -7,10 +7,14 @@
 {% endblock %}
 
 {% block content %}
-
+<header class="add-booking-header">
+    <div class="heading-container">
+        <img src="{% static 'menu/images/pizza-header.webp' %}" alt="Small Pizza Icon" class="heading-icon">
+        <h1 class="text-left mt-4">Confirm booking deletion</h1>
+    </div>
+</header>
 <!-- Confirm booking deletion -->
 <div class="container">
-    <h1 class="text-center mt-2">Confirm booking deletion</h1>
     <div class="d-flex justify-content-center pt-3">
         <form method="post" class="text-center">
             {% csrf_token %}
