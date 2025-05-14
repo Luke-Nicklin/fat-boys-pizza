@@ -154,7 +154,15 @@ The home page hero section incldudes a welcome headline and some introductory co
 
 There are buttons to 'Book a table' and 'View menu' so the user can easily achieve what they want to achieve whilst visiting the website.
 
-There is a 'What makes us different?' section that explains why a user should visit the restaurant. Plus, there is a 'What our customers say' section that shows some of the reviews from the restaurant's customers.
+**Home page - what makes us different?**
+
+There is a 'What makes us different?' section that explains why a user should visit the restaurant. 
+
+**Home page - what our customers say**
+
+Plus, there is a 'What our customers say' section that shows some of the reviews from the restaurant's customers.
+
+**Home page - find us here and opening times**
 
 At the bottom of the home page, there is an embeded Google map so users can easily find us. And there is an opening times section so users know when we're open.
 
