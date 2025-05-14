@@ -147,3 +147,24 @@ The following nav links appear on every screen:
 - Log out (routes to logout.html) - visible to logged in users
 
 ![Navbar](docs/readme-images/Navbar.png)
+
+**Home page**
+
+The home page hero section incldudes a welcome headline and some introductory content that immediately informs the user what the website is for.
+
+There are buttons to 'Book a table' and 'View menu' so the user can easily achieve what they want to achieve whilst visiting the website.
+
+There is a 'What makes us different?' section that explains why a user should visit the restaurant. Plus, there is a 'What our customers say' section that shows some of the reviews from the restaurant's customers.
+
+At the bottom of the home page, there is an embeded Google map so users can easily find us. And there is an opening times section so users know when we're open.
+
+![Home page header](docs/readme-images/home-header.png)
+![What makes us different](docs/readme-images/home-what-makes-us-different.png)
+![What our customers say](docs/readme-images/home-what-our-customers-say.png)
+![Find us and opening times](docs/readme-images/home-find-us-opening-times.png)
+
+**Footer**
+
+The footer includes links to the restaurant's social media pages so the user can easily follow us online. This includes links to LinkedIn, Instagram, X and YouTube.
+
+![Footer](docs/readme-images/footer.png)
