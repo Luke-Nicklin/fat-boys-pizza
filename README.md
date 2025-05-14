@@ -131,3 +131,19 @@ As a developer, I need to create a testing.md file, so that I can show the tests
 
 # Features
 
+**Navigation bar**
+
+The navigation bar is visible on all pages and includes links to Home, Bookings, Menu, Register, Log in and Log out when a user is logged in. The navigation converts to a hamburger menu on smaller devices so the user can view and navigate the site on all devices.
+
+The following nav links appear on every screen:
+
+- Home (routes to index.html) - visible to all users
+- Bookings (drop down)
+    - Manage bookings (routes to manage-bookings.html) - visible to all users
+    - Add booking (routes to add-booking.html) - visible to all users
+- Menu (routes to menu.html) - visible to all users
+- Register (routes to signup.html) - visible to logged out users
+- Log in (routes to login.html) - visible to logged out users
+- Log out (routes to logout.html) - visible to logged in users
+
+![Navbar](docs/readme-images/Navbar.png)
