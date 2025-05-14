@@ -79,3 +79,53 @@ As a developer, I need to create a reade.md file, so that other developers can e
 
 As a developer, I need to create a testing.md file, so that I can show the tests I completed for the website
 
+## Wireframes
+
+- Home page
+
+![Home page](docs/wireframes/FatBoysPizza%20-%20Home.png)
+
+- Menu
+
+![Menu](docs/wireframes/FatBoysPizza%20-%20Menu.png)
+
+- Register
+
+![Register](docs/wireframes/FatBoysPizza%20-%20Register.png)
+
+- Log in
+
+![Log in](docs/wireframes/FatBoysPizza%20-%20Log%20in.png)
+
+- Add booking
+
+![Add booking](docs/wireframes/FatBoysPizza%20-%20Add%20Booking.png)
+
+- Your bookings
+
+![Your bookings](docs/wireframes/FatBoysPizza%20-%20Your%20Bookings.png)
+
+- Edit booking
+
+![Edit booking](docs/wireframes/FatBoysPizza%20-%20Edit%20Booking.png)
+
+- Delete booking
+
+![Delete booking](docs/wireframes/FatBoysPizza%20-%20Delete%20Booking.png)
+
+- Sign out
+
+![Sign out](docs/wireframes/FatBoysPizza%20-%20Sign%20out.png)
+
+- 403 error
+
+![403 error](docs/wireframes/FatBoysPizza%20-%20403%20Error.png)
+
+- 404 error
+
+![404 error](docs/wireframes/FatBoysPizza%20-%20404%20Error.png)
+
+- 500 error
+
+![500 error](docs/wireframes/FatBoysPizza%20-%20500%20Error.png)
+
