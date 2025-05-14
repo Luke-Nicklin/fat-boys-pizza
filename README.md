@@ -37,7 +37,7 @@ The website also aims to help customers to easily view the restaurant's menu and
 
 To develop this project I used an Agile approach, dividing the work into phases and building the website iteratively to maximise efficiency. I used a kanban board with tickets containing different user stories with prioritised labels that included 'Must have', 'Should have' and 'Could have'. Each ticket defined the user story and the acceptance criteria.
 
-Insert kanban image
+![Kanban](docs/readme-images/kanban.png)
 
 ## User Stories
 
