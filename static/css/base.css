@@ -99,13 +99,13 @@ a.nav-link {
 }
 
 .btn {
-    background-color: var(--color-primary);
+    background-color: #da0000;
     color: var(--color-background);
     border: var(--color-primary);
 }
 
 .btn-secondary {
-    background-color: gray;
+    background-color: #707070;
     color: var(--color-background);
 }
 

@@ -43,7 +43,7 @@ h2 {
     margin-top: 0px;
     margin-bottom: 10px;
     font-size: 2em;
-    color: #f40000;
+    color: #da0000;
     text-align: center;
 }
 p {
@@ -85,7 +85,7 @@ li {
 
 .pizza-item h3 {
     font-size: 1.5em;
-    color: #f40000;
+    color: #da0000;
     margin-bottom: 5px;
 }
 
@@ -134,8 +134,8 @@ li {
     box-sizing: border-box;
 }
 
-.options-box h4 {
-    color: #f40000;
+.options-box h3 {
+    color: #da0000;
     margin-top: 0;
     margin-bottom: 10px;
 }
@@ -169,7 +169,7 @@ li {
 
 .side-item h3 {
     font-size: 1.3em;
-    color: #f40000;
+    color: #da0000;
     margin-bottom: 5px;
 }
 
@@ -246,7 +246,8 @@ footer {
     }
     .pizza-item-create {
         flex-direction: column;
-        align-items: stretch; /* Make boxes take full width */
+        align-items: center;
+        justify-content: center;
     }
     .options-box {
         width: 90%; /* Adjust width as needed */
