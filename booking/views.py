@@ -100,7 +100,7 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         """
         If the form is valid, save the booking and redirect to the manage bookings page.
         """
-        messages.success(self.request, "Booking updated successfully.")
+        messages.success(self.request, "Booking updated successfully.", extra_tags='edit-delete')
         print("Booking updated successfully.")
         return super().form_valid(form)
 
@@ -132,6 +132,6 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         If the booking is deleted successfully, redirect to the manage 
         bookings page.
         """
-        messages.success(self.request, "Booking deleted successfully.")
+        messages.success(self.request, "Booking deleted successfully.", extra_tags='edit-delete')
         print("Booking deleted successfully.")
         return super().delete(request, *args, **kwargs)
