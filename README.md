@@ -246,6 +246,10 @@ The entity relationship diagram was created using DBVisualizer and shows the sch
 
 Add technologies...
 
+# Testing
+
+Test results can be found in the TESTING.md file.
+
 # Deployment
 
 ### Version Control
