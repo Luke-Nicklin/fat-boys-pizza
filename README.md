@@ -22,7 +22,6 @@ Insert mockup when complete
     - [Version control](#version-control)
     - [Heroku deployment](#heroku-deployment)
     - [Run locally](#run-locally)
-    - [Fork project](#fork-project)
 - [Credits](#credits)
 
 # Site goals
@@ -252,7 +251,7 @@ Test results can be found in the [TESTING.md](TESTING.md) file.
 
 # Deployment
 
-### Version Control
+### Version control
 
 The site was created using the Visual Studio Code editor and pushed to github to the remote repository 'fat-boys-pizza'.
 
@@ -264,11 +263,11 @@ The following git commands were used throughout development to push code to the 
 
 ```git push``` - This command was used to push all committed code to the remote repository on github.
 
-### Heroku Deployment
+### Heroku deployment
 
 Add instructions...
 
-### Clone the Repository Code Locally
+### Run locally
 
 Navigate to the GitHub Repository you want to clone to use locally:
 
