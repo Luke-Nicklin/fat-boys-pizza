@@ -235,5 +235,10 @@ When an internal server error occurs, the user will see a 500 erro page. The use
 
 # Database design
 
+The database was designed to allow CRUD functionality to be used by registered customers when they are signed in to the website.
+
+This allows the users to be able to create a booking, view a booking, update a booking and delete a booking.
+
+The entity relationship diagram was created using DBVisualizer and shows the schemas for each of the models and how they are connected.
 
 ![Database model](docs/readme-images/Database%20model.png)
