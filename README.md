@@ -243,7 +243,22 @@ The entity relationship diagram was created using DBVisualizer and shows the sch
 
 # Technologies
 
-Add technologies...
+- HTML
+    - The website structure was developed using HTML
+- CSS
+    - To style the website, I used custom css in external files
+- Python
+    - Python is the main programming language used for the web booking application using the Django Framework
+- Visual Studio Code
+    - The website was developed using the Visual Studio Code code editor
+- GitHub
+    - The source code is hosted on GitHub
+- Git
+    - Git was used to commit and push code during the development of the website
+- Favicon.io
+    - A favicon was used for the website tab
+- Figma
+    - Wireframes were created using Figma
 
 # Testing
 
