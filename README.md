@@ -174,3 +174,28 @@ At the bottom of the home page, there is an embeded Google map so users can easi
 The footer includes links to the restaurant's social media pages so the user can easily follow us online. This includes links to LinkedIn, Instagram, X and YouTube.
 
 ![Footer](docs/readme-images/footer.png)
+
+**Add booking**
+
+
+![Add booking](docs/readme-images/add-booking.png)
+
+**Manage bookings**
+
+
+![Manage bookings](docs/readme-images/manage-bookings.png)
+
+**Edit booking**
+
+
+![Edit booking](docs/readme-images/edit-booking.png)
+
+**Delete booking**
+
+
+![Delete booking](docs/readme-images/delete-booking.png)
+
+**Menu**
+
+
+![Menu](docs/readme-images/menu.png)
