@@ -248,7 +248,7 @@ Add technologies...
 
 # Testing
 
-Test results can be found in the TESTING.md file.
+Test results can be found in the (TESTING.md) file.
 
 # Deployment
 
