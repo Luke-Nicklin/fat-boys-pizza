@@ -264,6 +264,10 @@ The following git commands were used throughout development to push code to the 
 
 ```git push``` - This command was used to push all committed code to the remote repository on github.
 
+### Heroku Deployment
+
+Add instructions...
+
 ### Clone the Repository Code Locally
 
 Navigate to the GitHub Repository you want to clone to use locally:
@@ -277,7 +281,7 @@ Navigate to the GitHub Repository you want to clone to use locally:
 The project will now have been cloned on your local machine for use.
 
 
-## Credits 
+# Credits 
 
 ### Code
 
