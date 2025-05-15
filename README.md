@@ -177,25 +177,36 @@ The footer includes links to the restaurant's social media pages so the user can
 
 **Add booking**
 
+The add booking page is designed so that users can easily book a table at the restaurant. They can select the customer, enter their name, add a phone number, select their table, choose a time, date and number of guests. They can then select the 'Add booking' button which will take them to the 
 
 ![Add booking](docs/readme-images/add-booking.png)
 
+**Booking confirmed**
+
+On the booking confirmed page, the user can see all the details of their booking and select the 'Manage Bookings' button to view their other bookings.
+
+![Booking confirmed](docs/readme-images/booking-confirmed.png)
+
 **Manage bookings**
 
+The manage bookings page allows the user to view all their bookings with the restaurant. They can see the name, date, time, table and guests for each booking. On this page, they can edit the booking or delete the booking.
 
 ![Manage bookings](docs/readme-images/manage-bookings.png)
 
 **Edit booking**
 
+When the user selects 'Edit' on the manage bookings page, they will be taken to the edit booking page where they can amend the details of the bookings.
 
 ![Edit booking](docs/readme-images/edit-booking.png)
 
-**Delete booking**
+**Confirm booking deletion**
 
+When a user selects 'Delete' on the manage bookings page, they will be taken to the confirm booking deletion page. Here they will see all the details of their booking and asked to confirm the booking deletion. The user can select 'Delete' or 'Cancel'.
 
-![Delete booking](docs/readme-images/delete-booking.png)
+![Confirm booking deletion](docs/readme-images/confirm-booking-deletion.png)
 
 **Menu**
 
+The Menu page displays all the items sold at the pizza restaurant. This is so the user can see what's on offer before the attend the restaurant. The menu lists the pizzas, includes details of the create your own pizza options, sides, drinks and desserts.
 
 ![Menu](docs/readme-images/menu.png)
