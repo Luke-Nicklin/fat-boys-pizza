@@ -241,3 +241,43 @@ This allows the users to be able to create a booking, view a booking, update a b
 The entity relationship diagram was created using DBVisualizer and shows the schemas for each of the models and how they are connected.
 
 ![Database model](docs/readme-images/Database%20model.png)
+
+# Technologies
+
+Add technologies...
+
+# Deployment
+
+### Version Control
+
+The site was created using the Visual Studio Code editor and pushed to github to the remote repository 'fat-boys-pizza'.
+
+The following git commands were used throughout development to push code to the remote repo:
+
+```git add <file>``` - This command was used to add the file(s) to the staging area before they are committed.
+
+```git commit -m "commit message"``` - This command was used to commit changes to the local repository queue ready for the final step.
+
+```git push``` - This command was used to push all committed code to the remote repository on github.
+
+### Clone the Repository Code Locally
+
+Navigate to the GitHub Repository you want to clone to use locally:
+
+- Click on the code drop down button
+- Click on HTTPS
+- Copy the repository link to the clipboard
+- Open your IDE of choice (git must be installed for the next steps)
+- Type git clone copied-git-url into the IDE terminal
+
+The project will now have been cloned on your local machine for use.
+
+
+## Credits 
+
+### Code
+
+- Daisy McGirr YouTube Tutorials (https://www.youtube.com/watch?v=cPfvhpdYaNY)
+- CodeInstitute - Python module helped me gain a good understanding of the fundamentals such as variables, operators, functions and classes.
+- CodeInstitute - I Think Therefore I Blog module helped me to understand the basics of setting up a full stack projecft.
+- StackOverflow - Helped me to troubleshoot issues I was having throughout the project.
