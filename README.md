@@ -210,3 +210,25 @@ When a user selects 'Delete' on the manage bookings page, they will be taken to 
 The Menu page displays all the items sold at the pizza restaurant. This is so the user can see what's on offer before the attend the restaurant. The menu lists the pizzas, includes details of the create your own pizza options, sides, drinks and desserts.
 
 ![Menu](docs/readme-images/menu.png)
+
+**Favicon**
+
+A favicon is used to help users find the website when they have a lot of tabs open.
+
+![Favicon](docs/readme-images/Favicon.png)
+
+**403 page**
+
+A 403 page has been included to notify users when they have attempted to access a page they're not authorised to access. It will allow users to easily navigate their way back to the home page with a 'Home' button.
+
+**404 page**
+
+A 404 page has been included for when a user tries to navigate to a broken link. It will inform the users that the page they're trying to navigate to does not exist and provide them an easy way to return to the home page with a 'Home' button.
+
+**500 page**
+
+When an internal server error occurs, the user will see a 500 erro page. The user will easily be able to return to the home page via the 'Home' button.
+
+## Features left to implement
+
+- In a future release I would like to add functionality to the website that allows restaurant staff to add, edit a delete menus. This feature would allow staff to easily update the menu as and when menu items change.
