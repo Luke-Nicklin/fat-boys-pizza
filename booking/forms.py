@@ -38,6 +38,13 @@ class BookingForm(forms.ModelForm):
         table = cleaned_data.get("table")
         date = cleaned_data.get("date")
         booking_time = cleaned_data.get("booking_time")
+        guests = cleaned_data.get("guests")
+
+        if table:
+            if guests and guests > table.capacity:
+                raise ValidationError(
+                    f"The table can only accommodate {table.capacity} guests. For bookings of more than 6 people, please call us."
+                )
 
         if table and date and booking_time:
             # Check if a booking already exists for this table, date, and time
