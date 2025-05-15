@@ -232,3 +232,8 @@ When an internal server error occurs, the user will see a 500 erro page. The use
 ## Features left to implement
 
 - In a future release I would like to add functionality to the website that allows restaurant staff to add, edit a delete menus. This feature would allow staff to easily update the menu as and when menu items change.
+
+# Database design
+
+
+![Database model](docs/readme-images/Database%20model.png)
