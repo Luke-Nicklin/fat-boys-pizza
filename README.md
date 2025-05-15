@@ -12,7 +12,6 @@ Insert mockup when complete
     - [Agile](#agile)
         - [User stories](#user-stories)
     - [Wireframes](#wireframes)
-    - [Design](#design)
 - [Features](#features)
     - [Features left to implement](#features-left-to-implement)
 - [Database design](#database-design)
