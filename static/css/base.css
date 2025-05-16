@@ -162,6 +162,28 @@ small {
     text-align: center;
 }
 
+.toasts {
+    position: fixed;
+    top: 20px; /* Adjust as needed for vertical placement */
+    right: 20px;
+    z-index: 1080; /* Ensure it's high enough to appear above other elements */
+    min-width: 250px; /* Optional: Minimum width for the toast container */
+    max-width: 500px; /* Optional: Maximum width */
+    overflow: hidden; /* Prevent overflow if multiple toasts are long */
+    padding: 10px; /* Optional padding around the toasts */
+}
+
+.toast {
+    margin-bottom: 0.5rem; /* Optional spacing between individual toasts */
+}
+
+.de-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
 @media (max-width: 767.98px) {
     #location-map {
         width: 90% !important;

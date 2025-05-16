@@ -1,12 +1,18 @@
-from django.views.generic import CreateView, DetailView, DeleteView, ListView, UpdateView
+from django.views.generic import (
+    CreateView,
+    DetailView,
+    DeleteView,
+    ListView,
+    UpdateView,
+)
 
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 
-from django.urls import reverse
+from django.urls import reverse_lazy, reverse
 from .models import Booking
 from .forms import BookingForm
 from django.contrib import messages
-from django.shortcuts import render
+from django.shortcuts import redirect
 
 
 class AddBooking(LoginRequiredMixin, CreateView):
@@ -111,7 +117,7 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     model = Booking
     template_name = "booking/booking-confirm-delete.html"
-    success_url = "/booking/manage-bookings/"
+    success_url = reverse_lazy("booking:manage-bookings")
     pk_url_kwarg = "booking_id"
 
     def test_func(self):
@@ -126,11 +132,9 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         """
         return Booking.objects.filter(customer=self.request.user)
     
-    def delete(self, request, *args, **kwargs):
+    def form_valid(self, form):
         """
-        If the booking is deleted successfully, redirect to the manage 
-        bookings page.
+        If the form is valid, delete the booking and redirect to the manage bookings page.
         """
         messages.success(self.request, "Booking deleted successfully.")
-        print("Booking deleted successfully.")
-        return super().delete(request, *args, **kwargs)
+        return super(DeleteBooking, self).form_valid(form)

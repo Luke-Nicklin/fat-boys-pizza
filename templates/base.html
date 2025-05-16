@@ -24,6 +24,15 @@
 <body>
     {% include 'includes/header.html' %}
 
+    {% if messages %}
+        <!-- messages -->
+        <div class="toasts">
+            {% for message in messages %}
+            {% include 'includes/toasts/toast.html' %}
+            {% endfor %}
+        </div>
+        {% endif %}
+
     <main> 
         {% block content %}
         {% endblock %}

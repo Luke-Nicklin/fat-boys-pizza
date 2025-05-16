@@ -48,7 +48,14 @@ class BookingForm(forms.ModelForm):
 
         if table and date and booking_time:
             # Check if a booking already exists for this table, date, and time
-            if Booking.objects.filter(table=table, date=date, booking_time=booking_time).exists():
+            # Exclude the current booking if it's an update
+            existing_booking = Booking.objects.filter(
+                table=table, date=date, booking_time=booking_time
+            )
+            if self.instance.pk:  # If this is an edit form (instance has a primary key)
+                existing_booking = existing_booking.exclude(pk=self.instance.pk)
+
+            if existing_booking.exists():
                 raise ValidationError(
                     "This table is already booked on this date at this time."
                 )
