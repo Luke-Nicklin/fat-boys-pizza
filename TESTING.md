@@ -2,13 +2,15 @@
 
 **Navigation links**
 
-Test:
+All navigation links on all pages have been tested to make sure that they navigate to the correct pages.
 
-Steps:
-
-Expected:
-
-Actual:
+- Home -> index.html
+- Bookings drop down, Manage bookings -> manage-bookings.html
+- Bookings drop downs, Add booking -> add-booking.html
+- Menu -> menu.html
+- Log in -> Log in all auth page
+- Register -> Sign up all auth page
+- Log out -> Log out all auth page
 
 <hr>
 
@@ -50,13 +52,12 @@ Actual:
 
 **Footer**
 
-Test:
+The social links within the footer were tested to make sure the social media pages openened in a new tab when selected.
 
-Steps:
-
-Expected:
-
-Actual:
+- LinkedIn -> opens in a new tab
+- Instagram -> opens in a new tab
+- X -> opens in a new tab
+- YouTube -> opens in a new tab
 
 <hr>
 
