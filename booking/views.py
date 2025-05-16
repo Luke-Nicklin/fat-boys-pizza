@@ -12,8 +12,6 @@ from django.urls import reverse_lazy, reverse
 from .models import Booking
 from .forms import BookingForm
 from django.contrib import messages
-from django.shortcuts import redirect
-
 
 class AddBooking(LoginRequiredMixin, CreateView):
     """
