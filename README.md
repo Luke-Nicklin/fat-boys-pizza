@@ -300,6 +300,7 @@ The project will now have been cloned on your local machine for use.
 ### Code
 
 - Daisy McGirr YouTube Tutorials (https://www.youtube.com/watch?v=cPfvhpdYaNY)
+- Restaurant booking app inspiration taken and modified from (https://github.com/Gareth-McGirr/Portfolio-Project-4-SizzleAndSteak)
 - CodeInstitute - 'Working with database management systems' module helped me to gain a good understanding of databases and how best to use them for this project.
 - CodeInstitute - 'I Think Therefore I Blog' module helped me to understand the basics of setting up a full stack project.
 - StackOverflow - Helped me to troubleshoot issues I was having throughout the project.
