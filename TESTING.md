@@ -227,6 +227,8 @@ The lighthouse report showed good scores across all pages. However, there was a 
 
 # Validator testing
 
+
+
 # Responsiveness
 
 # Bugs
