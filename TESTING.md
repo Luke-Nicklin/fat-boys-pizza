@@ -263,11 +263,14 @@ The lighthouse report showed good scores across all pages. However, there was a 
 
 **Python**
 
-    - No errors were returned when passing the booking forms.py file through the ![CI Python Linter](docs/testing/images/booking-forms-python-linter.png)
+- No errors were returned when passing the booking forms.py file through the ![CI Python Linter](docs/testing/images/booking-forms-python-linter.png)
 
-    - No errors were returned when passing the booking models.py file through the ![CI Python Linter](docs/testing/images/booking-models-python-linter.png)
+- No errors were returned when passing the booking models.py file through the ![CI Python Linter](docs/testing/images/booking-models-python-linter.png)
 
-    - 
+- No errors were returned when passing the booking urls.py file through the ![CI Python Linter](docs/testing/images/booking-urls-python-linter.png)
+
+- No errors were returned when passing the booking views.py file through the ![CI Python Linter](docs/testing/images/booking-views-python-linter.png)
+
 
 # Responsiveness
 
