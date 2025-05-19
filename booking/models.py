@@ -41,4 +41,4 @@ class Booking(models.Model):
     guests = models.IntegerField(default=1)
 
     def __str__(self):
-        return f"Booking for {self.name} on {self.date} at {self.booking_time}"
+        return f"Booking for {self.name} on {self.date} at {self.get_booking_time_display()}"

@@ -159,15 +159,13 @@ USE_TZ = True
 
 # Account Setup
 
-ACCOUNT_LOGIN_METHOD = {'email', 'username'}
+ACCOUNT_LOGIN_METHODS = ['email', 'username']
 ACCOUNT_SIGNUP_FIELDS = ['email', 'username', 'password1', 'password2']
 ACCOUNT_EMAIL_VERIFICATION = 'none'
 ACCOUNT_USERNAME_MIN_LENGTH = 4
 LOGIN_URL = '/accounts/login/'
 LOGIN_REDIRECT_URL = '/'
 
-ACCOUNT_USERNAME_REQUIRED = True
-ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_FORMS = {'signup': 'accounts.forms.CustomSignupForm'}
 
 if 'DEVELOPMENT' in os.environ:

@@ -173,7 +173,10 @@ Tests were carried out to ensure validation messaging would appear if a user att
 
 ## Unit testing
 
+Unit tests were carried out to test functionality for the booking and menu apps. Each test resulted with an 'OK' as seen in the images below. However, a persistant '?: (account.W001) ACCOUNT_LOGIN_METHODS conflicts with ACCOUNT_SIGNUP_FIELDS' warning appeared in both tests. Despite numerous attempts at resolving the issue, I could not run the tests without seeing this warning.
 
+![Booking unit test](docs/testing/images/booking-unit-test.png)
+![Menu unit test](docs/testing/images/menu-unit-test.png)
 
 # Accessibility
 
