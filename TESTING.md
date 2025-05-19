@@ -227,7 +227,8 @@ The lighthouse report showed good scores across all pages. However, there was a 
 
 # Validator testing
 
-
+- HTML
+    - No errors were returned when passing the home page through the official [W3C validator]
 
 # Responsiveness
 
