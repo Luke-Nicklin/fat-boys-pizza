@@ -203,6 +203,12 @@ When a user selects 'Delete' on the manage bookings page, they will be taken to 
 
 ![Confirm booking deletion](docs/readme-images/confirm-booking-deletion.png)
 
+**Toast messages**
+
+Toast messages appear in the top righ-hand corner off the screen to provide feedback to the user when they have successfully edited a booking, deleted a booking, logged in, logged out and registered.
+
+![Toast message](docs/readme-images/toast-message.png)
+
 **Menu**
 
 The Menu page displays all the items sold at the pizza restaurant. This is so the user can see what's on offer before the attend the restaurant. The menu lists the pizzas, includes details of the create your own pizza options, sides, drinks and desserts.
