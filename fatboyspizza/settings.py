@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     
     # Apps
+    'accounts',
     'home',
     'booking',
     'menu',
@@ -167,6 +168,7 @@ LOGIN_REDIRECT_URL = '/'
 
 ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_EMAIL_REQUIRED = True
+ACCOUNT_FORMS = {'signup': 'accounts.forms.CustomSignupForm'}
 
 if 'DEVELOPMENT' in os.environ:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
