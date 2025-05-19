@@ -16,4 +16,3 @@ class MenuListView(ListView):
         Optionally filter the menu items based on availability.
         """
         return Menu.objects.filter(is_available=True)
-
