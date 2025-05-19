@@ -13,6 +13,7 @@ from .models import Booking
 from .forms import BookingForm
 from django.contrib import messages
 
+
 class AddBooking(LoginRequiredMixin, CreateView):
     """
     Add a new booking.
@@ -27,8 +28,9 @@ class AddBooking(LoginRequiredMixin, CreateView):
         return super().form_valid(form)
 
     def get_success_url(self):
-        return reverse('booking:booking-confirmed', kwargs={'pk': self.object.pk})
-    
+        return reverse(
+            'booking:booking-confirmed', kwargs={'pk': self.object.pk})
+
 
 class BookingConfirmed(LoginRequiredMixin, DetailView):
     """
@@ -59,8 +61,9 @@ class BookingList(LoginRequiredMixin, ListView):
         """
         Ensure that only the bookings of the logged-in user can be viewed.
         """
-        return Booking.objects.filter(customer=self.request.user).order_by("date", "booking_time")
-    
+        return Booking.objects.filter(customer=self.request.user).order_by(
+            "date", "booking_time")
+
 
 class BookingDetail(LoginRequiredMixin, DetailView):
     """
@@ -94,14 +97,15 @@ class EditBooking(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         Ensure that only the bookings of the logged-in user can be edited.
         """
         return Booking.objects.filter(customer=self.request.user)
-    
+
     def test_func(self):
         booking = self.get_object()
         return self.request.user == booking.customer
 
     def form_valid(self, form):
         """
-        If the form is valid, save the booking and redirect to the manage bookings page.
+        If the form is valid, save the booking and redirect to the
+        manage bookings page.
         """
         messages.success(self.request, "Booking updated successfully.")
         print("Booking updated successfully.")
@@ -129,10 +133,11 @@ class DeleteBooking(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         Ensure that only the bookings of the logged-in user can be deleted.
         """
         return Booking.objects.filter(customer=self.request.user)
-    
+
     def form_valid(self, form):
         """
-        If the form is valid, delete the booking and redirect to the manage bookings page.
+        If the form is valid, delete the booking and redirect to the
+        manage bookings page.
         """
         messages.success(self.request, "Booking deleted successfully.")
         return super(DeleteBooking, self).form_valid(form)
