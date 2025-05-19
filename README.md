@@ -286,7 +286,22 @@ The following git commands were used throughout development to push code to the 
 
 ### Heroku deployment
 
-Add instructions...
+The site was deployed using Heroku. To deploy using Heroku:
+
+- Navigate to heroku and log in to your account
+- Select the 'New' button in the top right corner and select 'Create new app'
+- Enter app name
+- Select region and click 'Create app'
+- Click on the newly created app and go to the 'Deploy' tab and then to 'Deployment method' section. Authorize and connect your GitHub account, then find and select your repository.
+- Go to the 'Settings' tab, click on 'Reveal Congif Vars' and add the following keys and values:
+    - DATABSE_URL: postgres url beginning with postgres://
+    - HEROKU_POSTGRESQL_BROWN_URL: postgres url beginning with postgres://
+    - SECRET_KEY: (Your secret key)
+- Select the 'Deploy' tab
+- Scroll down to 'Manual deploy' and select 'Main' branch
+- Click deploy
+
+The app should now be deployed
 
 ### Run locally
 
