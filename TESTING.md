@@ -16,13 +16,35 @@ All navigation links on all pages have been tested to make sure that they naviga
 
 **Authentication**
 
-Test:
+Test: Make sure a user can register an account with the website
 
 Steps:
 
+1. Navigate to [fat-boys-pizza](https://fat-boys-pizza-70a70bee766d.herokuapp.com/) and select 'Register' in the nav bar.
+2. Enter an email address, username and password
+3. Click Sign up
+
 Expected:
 
+The account is created and the user sees a toast message that says 'Successfully signed in as (username).' The user can now make a booking and manage their bookings.
+
 Actual:
+
+The account was created and the site displayed a toast message that said 'Successfully signed in as (usernam).' Was then able to make a booking and manage bookings.
+
+<hr>
+
+Test: Make sure a user can log in once registered
+
+Steps:
+
+1. 
+
+Expected:
+
+
+Actual:
+
 
 <hr>
 
