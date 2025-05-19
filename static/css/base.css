@@ -185,6 +185,10 @@ small {
 
 
 @media (max-width: 767.98px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
     #location-map {
         width: 90% !important;
         margin-left: auto !important;
@@ -239,5 +243,11 @@ small {
 
     .location-container {
         display: block !important; /* Override flexbox for now */
+    }
+}
+
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 2.5em;
     }
 }
