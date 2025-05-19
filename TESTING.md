@@ -228,7 +228,38 @@ The lighthouse report showed good scores across all pages. However, there was a 
 # Validator testing
 
 - HTML
-    - No errors were returned when passing the home page through the official [W3C validator]
+
+![HTML validator](docs/testing/images/home-html-validator.png)
+
+    - No errors were returned when passing the home page through the official W3C validator
+
+    - No errors were returned when passing the register page through the official W3C validator
+
+    - No errors were returned when passing the log in page through the official W3C validator
+
+    - No errors were returned when passing the manage bookigns page through the official W3C validator
+
+    - No errors were returned when passing the add booking page through the official W3C validator
+
+    - No errors were returned when passing the booking confirmed page through the official W3C validator
+
+    - No errors were returned when passing the edit booking page through the official W3C validator
+
+    - No errors were returned when passing the confirm booking deletion page through the official W3C validator
+
+    - No errors were returned when passing the menu page through the official W3C validator
+
+    - No errors were returned when passing the log out page through the official W3C validator
+
+- CSS
+
+![CSS validatory](docs/testing/images/base-css-validator.png)
+
+    - No errors were returned when passing the bass.css file through the official W3C Validator
+
+    - No errors were returned when passing the menu.css file through the official W3C Validator
+
+    - No errors were returned when passing the booking.css file through the official W3C Validator
 
 # Responsiveness
 
