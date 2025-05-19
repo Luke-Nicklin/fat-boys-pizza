@@ -12,7 +12,7 @@
         <h1>Pizzas</h1>
     </div>
     </header>
-    <div>
+    <main>
         <ul id="pizza-list">
             <li class="pizza-item">
                 <h2>Margherita Classica</h2>
@@ -62,9 +62,7 @@
         <p>Choose your crust, sauce, cheese, and toppings to create your perfect pizza.</p>
             <span>Starting at £10.00 (Calorie count varies)</span>
     </div>
-        <ul>
-        <li class="pizza-item-create">
-            <div class="options-box">
+        <ul class="pizza-item-create"><li class="options-box">
                 <h3>Crust options:</h3>
                 <ul>
                     <li>Thin</li>
@@ -72,9 +70,9 @@
                     <li>Stuffed Crust (+ £2)</li>
                     <li>Gluten-Free (+ £2)</li>
                 </ul>
-            </div>
+            </li>
 
-            <div class="options-box">
+            <li class="options-box">
                 <h3>Sauce options:</h3>
                 <ul>
                     <li>Tomato</li>
@@ -82,9 +80,9 @@
                     <li>BBQ</li>
                     <li>Alfredo</li>
                 </ul>
-            </div>
+            </li>
 
-            <div class="options-box">
+            <li class="options-box">
                 <h3>Veg options:</h3>
                 <ul>
                     <li>Onions</li>
@@ -92,9 +90,9 @@
                     <li>Tomatoes</li>
                     <li>Spinach</li>
                 </ul>
-            </div>
+            </li>
 
-            <div class="options-box">
+            <li class="options-box">
                 <h3>Meat options:</h3>
                 <ul>
                     <li>Pepperoni</li>
@@ -102,8 +100,8 @@
                     <li>Bacon</li>
                     <li>Ham</li>
                 </ul>
-            </div>
-        </li>
+            </li>
+        </ul>
            
         <div class="heading-container">
             <img src="{% static 'menu/images/salad-graphic.webp' %}" alt="Small Salad Icon" class="heading-icon">
@@ -138,7 +136,7 @@
     </div>
         <ul>
             <li>Soft Drinks - £3.00</li>
-            <li>Juices - 34.00</li>
+            <li>Juices - £4.00</li>
             <li>Beer - £6.50</li>
             <li>Wine - £7</li>
         </ul>
@@ -150,6 +148,7 @@
             <li><b>Cannoli</b> - £6.00 (Approx. 300 calories)</li>
             <li><b>Tiramisu</b> - £7.00 (Approx. 350 calories)</li>
         </ul>
+        </div>
         <p style="font-size: 0.9em; color: #555;">*Note: Calorie information is approximate and may vary. Please ask your server for more detailed nutritional information.*</p>
-    </div>
+    </main>
 {% endblock %}
