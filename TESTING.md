@@ -76,7 +76,7 @@ Test: Make sure a user can add a booking
 
 Steps:
 
-1. Navigate to the ![Add booking](https://fat-boys-pizza-70a70bee766d.herokuapp.com/booking/add-booking/) - log in if prompted.
+1. Navigate to [Add booking](https://fat-boys-pizza-70a70bee766d.herokuapp.com/booking/add-booking/) - log in if prompted.
 2. Enter the following booking details:
     - Name: Luke
     - Phone number: 07912345678
@@ -100,7 +100,7 @@ Test: Make sure a user can edit a booking
 
 Steps:
 
-1. Navigate to the ![Manage bookings](https://fat-boys-pizza-70a70bee766d.herokuapp.com/booking/manage-bookings/) - log in if prompted.
+1. Navigate to the [Manage bookings](https://fat-boys-pizza-70a70bee766d.herokuapp.com/booking/manage-bookings/) - log in if prompted.
 2. Select 'Edit' on a booking
 3. Update the booking
 4. Select 'Update booking'
@@ -119,7 +119,7 @@ Test: Make sure a user can delete a booking
 
 Steps:
 
-1. Navigate to the ![Manage bookings](https://fat-boys-pizza-70a70bee766d.herokuapp.com/booking/manage-bookings/) - log in if prompted.
+1. Navigate to the [Manage bookings](https://fat-boys-pizza-70a70bee766d.herokuapp.com/booking/manage-bookings/) - log in if prompted.
 2. Select 'Delete' on a booking
 3. Select 'Delete' on the 'Confirm booking deletion' page
 
