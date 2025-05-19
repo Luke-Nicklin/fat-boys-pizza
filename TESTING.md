@@ -304,4 +304,8 @@ Website behaved as expected.
 
 # Bugs
 
-The are currently no known bugs associated with the website. All errors have been fixed and the website is running as designed. The only issue I have come across is a warning message ?: (account.W001) ACCOUNT_LOGIN_METHODS conflicts with ACCOUNT_SIGNUP_FIELDS' that appeared during unit testing. Despite numerous attempts at resolving the issue, I could not run the tests without seeing this warning.
+The are currently no known bugs associated with the website. All errors have been fixed and the website is running as designed. The only issues I have come across are: 
+
+- The warning message ?: (account.W001) ACCOUNT_LOGIN_METHODS conflicts with ACCOUNT_SIGNUP_FIELDS' that appeared during unit testing. Despite numerous attempts at resolving the issue, I could not run the tests without seeing this warning. 
+
+- The home page Best Practices low socre on a lighthouse report. This is due to the way Google are looking to treat user's experience with third-party cookies in the future. This is currently not something I can fix.
