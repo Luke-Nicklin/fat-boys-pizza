@@ -8,7 +8,7 @@ class BookingForm(forms.ModelForm):
     """
     Form to handle booking creation.
     """
-
+    table = forms.ModelChoiceField(queryset=Table.objects.all(), widget=forms.Select())
     class Meta:
         model = Booking
         fields = [
@@ -22,7 +22,6 @@ class BookingForm(forms.ModelForm):
         ]
         widgets = {
             "date": forms.DateInput(attrs={"type": "date"}),
-            "table": forms.Select(),
             "booking_time": forms.Select(),
             "guests": forms.NumberInput(attrs={"min": 1}),
         }
