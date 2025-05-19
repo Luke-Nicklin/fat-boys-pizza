@@ -227,7 +227,7 @@ The lighthouse report showed good scores across all pages. However, there was a 
 
 # Validator testing
 
-- HTML
+**HTML**
 
 ![HTML validator](docs/testing/images/home-html-validator.png)
 
@@ -251,7 +251,7 @@ The lighthouse report showed good scores across all pages. However, there was a 
 
 - No errors were returned when passing the log out page through the official W3C validator
 
-- CSS
+**CSS**
 
 ![CSS validator](docs/testing/images/base-css-validator.png)
 
@@ -261,7 +261,7 @@ The lighthouse report showed good scores across all pages. However, there was a 
 
 - No errors were returned when passing the booking.css file through the official W3C Validator
 
-- Python
+**Python**
 
     - No errors were returned when passing the booking forms.py file through the ![CI Python Linter](docs/testing/images/booking-forms-python-linter.png)
 
