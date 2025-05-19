@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    /** Fonts */
+    --font-family: 'Roboto', sans-serif;
+    --font-size: 16px;
+    --font-size-small: 14px;
+    --font-size-large: 18px;
+
+    /** Colors */
+    --color-primary: #F00;
+    --color-secondary: #F55;
+    --color-background: #FFF;
+    --color-text: #000;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+header {
+    margin-top: 20px;
+}
+
+.header-image img{
+    border-radius: 15px;
+}
+
+header h1 {
+    color: var(--color-primary);
+    font-size: 4em;
+}
+
+#why-us {
+    margin-top: 100px;
+    border-radius: 15px;
+}
+
+section h2 {
+    color: var(--color-primary);
+    margin-top: 40px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--color-text);
+}
+
+main {
+    flex: 1 0 auto;
+    background-color: var(--color-background);
+    margin-top: 60px;
+}
+
+
+/* Footer */
+footer {
+    flex-shrink: 0;
+    background-color: var(--color-background);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: var(--border);
+}
+
+.social-icon {
+    height: 2rem;
+    margin: 1rem;
+}
+
+/* Header */
+.navbar {
+    background-color: var(--color-background);
+}
+
+a.nav-link {
+    color: var(--color-text);
+}
+
+.active {
+    border-bottom: 2px solid var(--color-primary);
+    font-weight: 500;
+}
+
+/* Form */
+
+.form {
+    width: 40%;
+    margin: 3px auto;
+    border-radius: 5px;
+    text-align: left;
+    margin-top: 0;
+}
+
+.btn {
+    background-color: #da0000;
+    color: var(--color-background);
+    border: var(--color-primary);
+}
+
+.btn-secondary {
+    background-color: #707070;
+    color: var(--color-background);
+}
+
+h1.text-center {
+    margin-top: 20px;
+    color: var(--color-primary);
+}
+
+.col-12.col-md-6:nth-child(2) { /* Target the second col-md-6 div in the row */
+    text-align: center;
+    list-style-type: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.card {
+    color: var(--color-text);
+    border: var(--color-primary);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card p {
+    text-align: left;
+}
+
+small {
+    text-align: left;
+}
+
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#location-map,
+#opening-times {
+    flex: 1 1 50%;
+    box-sizing: border-box;
+}
+
+#location-map {
+    padding-right: 20px;
+}
+
+#opening-times {
+    padding-left: 20px;
+    text-align: center;
+}
+
+.toasts {
+    position: fixed;
+    top: 20px; /* Adjust as needed for vertical placement */
+    right: 20px;
+    z-index: 1080; /* Ensure it's high enough to appear above other elements */
+    min-width: 250px; /* Optional: Minimum width for the toast container */
+    max-width: 500px; /* Optional: Maximum width */
+    overflow: hidden; /* Prevent overflow if multiple toasts are long */
+    padding: 10px; /* Optional padding around the toasts */
+}
+
+.toast {
+    margin-bottom: 0.5rem; /* Optional spacing between individual toasts */
+}
+
+.de-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+@media (max-width: 767.98px) {
+    #location-map {
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+        display: block !important;
+    }
+
+    .map-responsive {
+        width: 100% !important;
+    }
+
+    .map-responsive iframe {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    #opening-times {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .location-container {
+        display: block !important;
+    }
+}
+
+@media (max-width: 1400px) {
+    #location-map {
+        width: 90% !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+        display: block !important;
+    }
+
+    .map-responsive {
+        width: 100% !important;
+    }
+
+    .map-responsive iframe {
+        width: 100% !important;
+        height: 300px !important;
+    }
+
+    #opening-times {
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .location-container {
+        display: block !important; /* Override flexbox for now */
+    }
+}
