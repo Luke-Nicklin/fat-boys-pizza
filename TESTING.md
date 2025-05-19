@@ -192,6 +192,8 @@ Testing checked to see if the following criteria were met:
 - Aria properties have been implemented correctly
 - WCAG 2.2 Coding best practices being followed
 
+![WAVE](docs/testing/images/WAVE-home-screen.png)
+
 # Validator testing
 
 # Responsiveness
