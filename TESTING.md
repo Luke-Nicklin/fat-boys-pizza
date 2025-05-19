@@ -284,4 +284,24 @@ The lighthouse report showed good scores across all pages. However, there was a 
 
 # Responsiveness
 
+All pages were tested to ensure responsiveness on screen sizes from 320px and upwards as defined in [WCAG 2.2 Reflow criteria for responsive design](https://www.w3.org/WAI/WCAG22/Understanding/reflow.html) on Chrome and safari browsers.
+
+Steps to test:
+
+1. Open browser and navigate to [Fat Boys Pizza](https://fat-boys-pizza-70a70bee766d.herokuapp.com/)
+2. Open the developer tools (right click and inspect)
+3. Set to responsive and decrease width to 320px
+4. Set the zoom to 50%
+5. Click and drag the responsive window to maximum width
+
+Expected:
+
+Website is responsive on all screen sizes and no images are pixelated or stretched.
+
+Actual:
+
+Website behaved as expected.
+
 # Bugs
+
+The are currently no known bugs associated with the website. All errors have been fixed and the website is running as designed. The only issue I have come across is a warning message ?: (account.W001) ACCOUNT_LOGIN_METHODS conflicts with ACCOUNT_SIGNUP_FIELDS' that appeared during unit testing. Despite numerous attempts at resolving the issue, I could not run the tests without seeing this warning.
