@@ -38,37 +38,116 @@ Test: Make sure a user can log in once registered
 
 Steps:
 
-1. 
+1. Navigate to [fat-boys-pizza](https://fat-boys-pizza-70a70bee766d.herokuapp.com/) and select 'Log in' in the nav bar.
+2. Input log in details
+3. Select 'Log in'
 
 Expected:
 
+The user can successfully log in with their details and is redirected to the home page
 
 Actual:
 
+The user successfully logged in with their details and was redirected to the home page
+
+<hr>
+
+Test: Make sure a user can log out
+
+Steps:
+
+1. Log in to the website
+2. Select the 'Log out' nav link
+3. Select 'Log out' on the 'Log out' screen
+
+Expected:
+
+The user logs out of the website
+
+Actual:
+
+The user is logged out of the website
 
 <hr>
 
 **Booking Forms**
 
-Test:
+Test: Make sure a user can add a booking
 
 Steps:
 
+1. Navigate to the ![Add booking](https://fat-boys-pizza-70a70bee766d.herokuapp.com/booking/add-booking/) - log in if prompted.
+2. Enter the following booking details:
+    - Name: Luke
+    - Phone number: 07912345678
+    - Table: Table 1 - Capacity: 6
+    - Booking time: any drop down option
+    - Date: any future date
+    - Geusts: 4
+3. Select 'Add booking'
+
 Expected:
 
+Form successfully submits and the user is taken to the 'Booking Confirmed' screen with the booking details
+
 Actual:
+
+Form successfully submitted and the user was taken to the 'Booking Confirmed' screen with the booking details
+
+<hr>
+
+Test: Make sure a user can edit a booking
+
+Steps:
+
+1. Navigate to the ![Manage bookings](https://fat-boys-pizza-70a70bee766d.herokuapp.com/booking/manage-bookings/) - log in if prompted.
+2. Select 'Edit' on a booking
+3. Update the booking
+4. Select 'Update booking'
+
+Expected:
+
+Form successfully submits, the user is taken back to the manage bookings page and a toast message is shown in the top righ-hand corner informing the user that the booking has been updated.
+
+Actual:
+
+Form successfully submitted, the user was taken back to the manage bookings page and a toast message was shown in the top right-hand corner informing the user that the booking had been updated.
+
+<hr>
+
+Test: Make sure a user can delete a booking
+
+Steps:
+
+1. Navigate to the ![Manage bookings](https://fat-boys-pizza-70a70bee766d.herokuapp.com/booking/manage-bookings/) - log in if prompted.
+2. Select 'Delete' on a booking
+3. Select 'Delete' on the 'Confirm booking deletion' page
+
+Expected:
+
+The user is taken back to the manage bookings page, the booking has been deleted and a toast message appears in the top right-hand corner of the screen informing the user that the booking has been deleted.
+
+Actual:
+
+The user was taken back to the manage bookings page, the booking was deleted and a toast message appeared in the top right-hand corner of the screen informing the user that the booking had been deleted.
 
 <hr>
 
 **Menu**
 
-Test:
+Test: The user can view the restaurant menu
 
 Steps:
 
+1. Navigate to the website and select the 'Menu' nav link
+
 Expected:
 
+The user is taken to the 'Menu' page.
+
 Actual:
+
+The user was taken to the 'Menu' page.
 
 <hr>
 
@@ -93,6 +172,8 @@ Tests were carried out to ensure validation messaging would appear if a user att
 4. Edit a booking so there are more guests than the table capacity
 
 ## Unit testing
+
+
 
 # Accessibility
 
