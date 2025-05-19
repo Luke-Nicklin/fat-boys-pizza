@@ -12,7 +12,6 @@ class BookingForm(forms.ModelForm):
     class Meta:
         model = Booking
         fields = [
-            "customer",
             "name",
             "phone_number",
             "table",
