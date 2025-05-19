@@ -205,7 +205,7 @@ When a user selects 'Delete' on the manage bookings page, they will be taken to 
 
 **Toast messages**
 
-Toast messages appear in the top righ-hand corner off the screen to provide feedback to the user when they have successfully edited a booking, deleted a booking, logged in, logged out and registered.
+Toast messages appear in the top right-hand corner off the screen to provide feedback to the user when they have successfully edited a booking, deleted a booking, logged in, logged out and registered.
 
 ![Toast message](docs/readme-images/toast-message.png)
 
