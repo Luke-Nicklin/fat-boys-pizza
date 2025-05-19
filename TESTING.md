@@ -194,6 +194,20 @@ Testing checked to see if the following criteria were met:
 
 ![WAVE](docs/testing/images/WAVE-home-screen.png)
 
+# Lighthouse
+
+The lighthouse report showed good scores across all pages. However, there was a low score on the home page for Best Practices to do with the embeded Google Map. This is because Google is moving towards a new experience that allows users to choose to browse without third-party cookies. This is not something I can resolve at this moment in time.
+
+![Home](docs/testing/images/home-lighthouse.png)
+![Add booking](docs/testing/images/add-booking-lighthouse.png)
+![Booking confirmed](docs/testing/images/booking-confirmed-lighthouse.png)
+![Manage bookings](docs/testing/images/manage-bookings-lighthouse.png)
+![Edit booking](docs/testing/images/edit-booking-lighthouse.png)
+![Confirm booking deletion](docs/testing/images/confirm-booking-deletion-lighthouse.png)
+![Menu](docs/testing/images/menu-lighthouse.png)
+![Log in](docs/testing/images/log-in-lighthouse.png)
+![Register](docs/testing/images/register-lighthouse.png)
+
 # Validator testing
 
 # Responsiveness
