@@ -175,7 +175,7 @@ The footer includes links to the restaurant's social media pages so the user can
 
 **Add booking**
 
-The add booking page is designed so that users can easily book a table at the restaurant. They can select the customer, enter their name, add a phone number, select their table, choose a time, date and number of guests. They can then select the 'Add booking' button which will take them to the 
+The add booking page is designed so that users can easily book a table at the restaurant. They can select the customer, enter their name, add a phone number, select their table, choose a time, date and number of guests. They can then select the 'Add booking' button which will take them to the 'Booking confirmed' page.
 
 ![Add booking](docs/readme-images/add-booking.png)
 
@@ -199,7 +199,7 @@ When the user selects 'Edit' on the manage bookings page, they will be taken to 
 
 **Confirm booking deletion**
 
-When a user selects 'Delete' on the manage bookings page, they will be taken to the confirm booking deletion page. Here they will see all the details of their booking and asked to confirm the booking deletion. The user can select 'Delete' or 'Cancel'.
+When a user selects 'Delete' on the manage bookings page, they will be taken to the confirm booking deletion page. Here they will see all the details of their booking and be asked to confirm the booking deletion. The user can select 'Delete' or 'Cancel'.
 
 ![Confirm booking deletion](docs/readme-images/confirm-booking-deletion.png)
 
@@ -211,7 +211,7 @@ Toast messages appear in the top right-hand corner off the screen to provide fee
 
 **Menu**
 
-The Menu page displays all the items sold at the pizza restaurant. This is so the user can see what's on offer before the attend the restaurant. The menu lists the pizzas, includes details of the create your own pizza options, sides, drinks and desserts.
+The Menu page displays all the items sold at the pizza restaurant. This is so the user can see what's on offer before they attend the restaurant. The menu lists the pizzas, includes details of the create your own pizza options, sides, drinks and desserts.
 
 ![Menu](docs/readme-images/menu.png)
 
