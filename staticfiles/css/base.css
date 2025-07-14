@@ -79,6 +79,16 @@ footer {
     background-color: var(--color-background);
 }
 
+.navbar-nav .nav-link {
+    display: block !important;
+    padding: 0.5rem 1rem !important;
+}
+
+.dropdown-menu .dropdown-item {
+    display: block !important;
+    padding: 0.5rem 1rem !important;
+}
+
 a.nav-link {
     color: var(--color-text);
 }
